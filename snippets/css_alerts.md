@@ -52,3 +52,36 @@ Provide feedback messages for typical user actions.
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 </div>
 ```
+
+### Dismissing function
+```html
+<style>
+.alert {
+  opacity: 1;
+  transition: opacity 0.6s; /* 600ms to fade out */
+}
+</style>
+
+<script>
+function dismissAlert (event) {
+    // Get the parent of <span class="closebtn"> (<div class="alert">)
+    var div = this.parentElement;
+
+    // Set the opacity of div to 0 (transparent)
+    div.style.opacity = "0";
+
+    // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+  
+<div class="alert danger">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <span class="closebtn" onclick="dismissAlert()">&times;</span>
+</div>
+<div class="alert danger">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <span class="closebtn" onclick="dismissAlert()">&times;</span>
+</div>
+```
