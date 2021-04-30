@@ -1,1 +1,4 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-primer
+
+title: You Might Not Need Frameworks
+description: Native methods to replace frontend frameworks.
