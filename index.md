@@ -2,4 +2,4 @@
 Native methods for replace frontend frameworks.
 
 {% include_relative snippets/ajax.md %}
-{% include_relative snippets/smool-scrolling.md %}
+{% include_relative snippets/smooth-scrolling.md %}
