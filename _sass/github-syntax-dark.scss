@@ -6,128 +6,277 @@
  
 [data-color-mode="dark"][data-dark-theme="dark"],
 [data-color-mode="dark"][data-dark-theme="dark_dimmed"] {
+  embed[type="application/pdf"] {
+    filter: invert(90%);
+  }
+  .filter {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    z-index: 2147483647;
+  }
+  .yellow-filter {
+    background: rgba(255, 255, 0, 0.15);
+    opacity: 0;
+  }
+  .blue-filter {
+    background: rgba(0, 0, 255, 0.15);
+    opacity: 0;
+  }
+  .dim-filter {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+  }
+  .transform-z {
+    transform: translateZ(0px);
+  }
+  .highlight .cm {
+    color: rgb(196, 196, 186);
+  }
 
-.pl-c /* comment, punctuation.definition.comment, string.comment */ {
-  color: #959da5;
-}
+  .highlight .cp {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-c1 /* constant, entity.name.constant, variable.other.constant, variable.language, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.quote, markup.raw, meta.diff.header */,
-.pl-s .pl-v /* string variable */ {
-  color: #c8e1ff;
-}
+  .highlight .c1 {
+    color: rgb(196, 196, 186);
+  }
 
-.pl-e /* entity */,
-.pl-en /* entity.name */ {
-  color: #b392f0;
-}
+  .highlight .cs {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-smi /* variable.parameter.function, storage.modifier.package, storage.modifier.import, storage.type.java, variable.other */,
-.pl-s .pl-s1 /* string source */ {
-  color: #f6f8fa;
-}
+  .highlight .c,
+  .highlight .cd {
+    color: rgb(196, 196, 186);
+  }
 
-.pl-ent /* entity.name.tag */ {
-  color: #7bcc72;
-}
+  .highlight .err {
+    color: rgb(230, 153, 153);
+    background-color: rgb(75, 47, 47);
+  }
 
-.pl-k /* keyword, storage, storage.type */ {
-  color: #ea4a5a;
-}
+  .highlight .gd {
+    color: rgb(191, 191, 191);
+    background-color: rgb(69, 17, 17);
+  }
 
-.pl-s /* string */,
-.pl-pds /* punctuation.definition.string, source.regexp, string.regexp.character-class */,
-.pl-s .pl-pse .pl-s1 /* string punctuation.section.embedded source */,
-.pl-sr /* string.regexp */,
-.pl-sr .pl-cce /* string.regexp constant.character.escape */,
-.pl-sr .pl-sre /* string.regexp source.ruby.embedded */,
-.pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */ {
-  color: #79b8ff;
-}
+  .highlight .ge {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-v /* variable */,
-.pl-ml /* markup.list, sublimelinter.mark.warning */ {
-  color: #fb8532;
-}
+  .highlight .gr {
+    color: rgb(230, 153, 153);
+  }
 
-.pl-bu /* invalid.broken, invalid.deprecated, invalid.unimplemented, message.error, brackethighlighter.unmatched, sublimelinter.mark.error */ {
-  color: #d73a49;
-}
+  .highlight .gh {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-ii /* invalid.illegal */ {
-  color: #fafbfc;
-  background-color: #d73a49;
-}
+  .highlight .gi {
+    color: rgb(191, 191, 191);
+    background-color: rgb(17, 69, 17);
+  }
 
-.pl-c2 /* carriage-return */ {
-  color: #fafbfc;
-  background-color: #d73a49;
-}
+  .highlight .go {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-c2::before /* carriage-return */ {
-  content: "^M";
-}
+  .highlight .gp {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-sr .pl-cce /* string.regexp constant.character.escape */ {
-  font-weight: bold;
-  color: #7bcc72;
-}
+  .highlight .gu {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-mh /* markup.heading */,
-.pl-mh .pl-en /* markup.heading entity.name */,
-.pl-ms /* meta.separator */ {
-  font-weight: bold;
-  color: #0366d6;
-}
+  .highlight .gt {
+    color: rgb(230, 153, 153);
+  }
 
-.pl-mi /* markup.italic */ {
-  font-style: italic;
-  color: #f6f8fa;
-}
+  .highlight .kc {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-mb /* markup.bold */ {
-  font-weight: bold;
-  color: #f6f8fa;
-}
+  .highlight .kd {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-md /* markup.deleted, meta.diff.header.from-file, punctuation.definition.deleted */ {
-  color: #b31d28;
-  background-color: #ffeef0;
-}
+  .highlight .kn {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-mi1 /* markup.inserted, meta.diff.header.to-file, punctuation.definition.inserted */ {
-  color: #176f2c;
-  background-color: #f0fff4;
-}
+  .highlight .kp {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-mc /* markup.changed, punctuation.definition.changed */ {
-  color: #b08800;
-  background-color: #fffdef;
-}
+  .highlight .kr {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-mi2 /* markup.ignored, markup.untracked */ {
-  color: #2f363d;
-  background-color: #959da5;
-}
+  .highlight .kt {
+    color: rgb(170, 181, 212);
+  }
 
-.pl-mdr /* meta.diff.range */ {
-  font-weight: bold;
-  color: #b392f0;
-}
+  .highlight .k,
+  .highlight .kv {
+    color: rgb(191, 191, 191);
+  }
 
-.pl-mo /* meta.output */ {
-  color: #0366d6;
-}
+  .highlight .mf {
+    color: rgb(153, 230, 230);
+  }
 
-.pl-ba /* brackethighlighter.tag, brackethighlighter.curly, brackethighlighter.round, brackethighlighter.square, brackethighlighter.angle, brackethighlighter.quote */ {
-  color: #ffeef0;
-}
+  .highlight .mh {
+    color: rgb(153, 230, 230);
+  }
 
-.pl-sg /* sublimelinter.gutter-mark */ {
-  color: #6a737d;
-}
+  .highlight .il {
+    color: rgb(153, 230, 230);
+  }
 
-.pl-corl /* constant.other.reference.link, string.other.link */ {
-  text-decoration: underline;
-  color: #79b8ff;
-}
+  .highlight .mi {
+    color: rgb(153, 230, 230);
+  }
+
+  .highlight .mo {
+    color: rgb(153, 230, 230);
+  }
+
+  .highlight .m,
+  .highlight .mb,
+  .highlight .mx {
+    color: rgb(153, 230, 230);
+  }
+
+  .highlight .sb {
+    color: rgb(230, 153, 172);
+  }
+
+  .highlight .sc {
+    color: rgb(230, 153, 172);
+  }
+
+  .highlight .sd {
+    color: rgb(230, 153, 172);
+  }
+
+  .highlight .s2 {
+    color: rgb(230, 153, 172);
+  }
+
+  .highlight .se {
+    color: rgb(230, 153, 172);
+  }
+
+  .highlight .sh {
+    color: rgb(230, 153, 172);
+  }
+
+  .highlight .si {
+    color: rgb(230, 153, 172);
+  }
+
+  .highlight .sx {
+    color: rgb(230, 153, 172);
+  }
+
+  .highlight .sr {
+    color: rgb(153, 230, 172);
+  }
+
+  .highlight .s1 {
+    color: rgb(230, 153, 172);
+  }
+
+  .highlight .ss {
+    color: rgb(230, 153, 210);
+  }
+
+  .highlight .s {
+    color: rgb(230, 153, 172);
+  }
+
+  .highlight .na {
+    color: rgb(153, 230, 230);
+  }
+
+  .highlight .bp {
+    color: rgb(191, 191, 191);
+  }
+
+  .highlight .nb {
+    color: rgb(153, 210, 230);
+  }
+
+  .highlight .nc {
+    color: rgb(170, 181, 212);
+  }
+
+  .highlight .no {
+    color: rgb(153, 230, 230);
+  }
+
+  .highlight .nd {
+    color: rgb(177, 205, 205);
+  }
+
+  .highlight .ni {
+    color: rgb(230, 153, 230);
+  }
+
+  .highlight .ne {
+    color: rgb(230, 153, 153);
+  }
+
+  .highlight .nf {
+    color: rgb(230, 153, 153);
+  }
+
+  .highlight .nl {
+    color: rgb(230, 153, 153);
+  }
+
+  .highlight .nn {
+    color: rgb(191, 191, 191);
+  }
+
+  .highlight .nt {
+    color: rgb(153, 153, 230);
+  }
+
+  .highlight .vc {
+    color: rgb(153, 230, 230);
+  }
+
+  .highlight .vg {
+    color: rgb(153, 230, 230);
+  }
+
+  .highlight .vi {
+    color: rgb(153, 230, 230);
+  }
+
+  .highlight .nv {
+    color: rgb(153, 230, 230);
+  }
+
+  .highlight .ow {
+    color: rgb(191, 191, 191);
+  }
+
+  .highlight .o {
+    color: rgb(191, 191, 191);
+  }
+
+  .highlight .w {
+    color: rgb(191, 191, 191);
+  }
+
+  .highlight {
+    background-color: rgb(33, 33, 33);
+  }
 }
