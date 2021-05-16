@@ -12,7 +12,7 @@
   </head>
   <body>
 <div class="Header">
-  <div class="Header-item flex-self-end">
+  <div class="Header-item" style="margin-left:auto">
     <div>
   <details class="dropdown details-reset details-overlay d-inline-block">
     <summary class="btn" aria-haspopup="true">
@@ -20,14 +20,14 @@
       <div class="dropdown-caret"></div>
     </summary>
 
-    <div class="dropdown-menu dropdown-menu-se">
+    <div class="dropdown-menu dropdown-menu-sw">
       <div class="dropdown-header">
         Select mode
       </div>
       <ul>
-        <li class="dropdown-item" click="setTheme('light');runTheme()">light</li>
-        <li class="dropdown-item" click="setTheme('dark_dimmed');runTheme()">dark dimmed</li>
-        <li class="dropdown-item" click="setTheme('dark');runTheme()">dark</li>
+        <li class="dropdown-item" onclick="setTheme('light');runTheme()">light</li>
+        <li class="dropdown-item" onclick="setTheme('dark_dimmed');runTheme()">dark dimmed</li>
+        <li class="dropdown-item" onclick="setTheme('dark');runTheme()">dark</li>
       </ul>
     </div>
   </details>
