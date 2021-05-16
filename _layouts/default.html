@@ -12,9 +12,8 @@
   </head>
   <body>
 <div class="Header clearfix">
-  <!-- Text item -->
   <div class="Header-item">
-    <div style="margin-bottom: 126px">
+    <div>
   <details class="dropdown details-reset details-overlay d-inline-block">
     <summary class="btn" aria-haspopup="true">
       🌙
@@ -26,9 +25,9 @@
         Select mode
       </div>
       <ul>
-        <li>light</li>
-        <li>dark dimmed</li>
-        <li>dark</li>
+        <li class="dropdown-item" click="setTheme();runTheme()">light</li>
+        <li class="dropdown-item" click="setTheme();runTheme()">dark dimmed</li>
+        <li class="dropdown-item" click="setTheme();runTheme()">dark</li>
       </ul>
     </div>
   </details>
