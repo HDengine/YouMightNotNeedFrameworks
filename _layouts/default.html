@@ -11,8 +11,8 @@
     <script src="{{ "/assets/js/dark.js?v=" | append: site.github.build_revision | relative_url }}"></script>
   </head>
   <body>
-<div class="Header clearfix">
-  <div class="Header-item">
+<div class="Header">
+  <div class="Header-item flex-self-end">
     <div>
   <details class="dropdown details-reset details-overlay d-inline-block">
     <summary class="btn" aria-haspopup="true">
@@ -25,9 +25,9 @@
         Select mode
       </div>
       <ul>
-        <li class="dropdown-item" click="setTheme();runTheme()">light</li>
-        <li class="dropdown-item" click="setTheme();runTheme()">dark dimmed</li>
-        <li class="dropdown-item" click="setTheme();runTheme()">dark</li>
+        <li class="dropdown-item" click="setTheme('light');runTheme()">light</li>
+        <li class="dropdown-item" click="setTheme('dark_dimmed');runTheme()">dark dimmed</li>
+        <li class="dropdown-item" click="setTheme('dark');runTheme()">dark</li>
       </ul>
     </div>
   </details>
