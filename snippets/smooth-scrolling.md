@@ -33,6 +33,7 @@ html {
   scroll-behavior:  smooth;  
 }
 ```
+> This trick is used in this website.
 
 <picture>
 <source type="image/webp" srcset="https://caniuse.bitsofco.de/static/v1/mdn-css__properties__scroll-behavior-1619781454378.webp">
